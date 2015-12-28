@@ -1,0 +1,71 @@
+type Rabbit
+{
+	class = PlayerCharacter
+	weaponAttachPosition = 0.4 -0.1 -0.1
+	weaponFPSAttachPosition = 0.4 -0.3 -0.5
+	walkMaxVelocity = 5
+	walkForce = 4000
+	flyControlMaxVelocity = 10
+	flyControlForce = 700
+	soundJump = "Types/Units/Rabbit/Jump.ogg"
+	allowPlayerControl = True
+	initialAI = DefaultGameCharacterAI
+	viewRadius = 70
+	fpsCameraOffset = 0 0 0.5
+	lifeMax = 200
+	targetPriority = 1
+	substance = Flesh
+	allowEditorCreate = True
+	networkType = Synchronized
+	weapons
+	{
+		item
+		{
+			weaponType = SubmachineGun
+		}
+		item
+		{
+			weaponType = Shotgun
+		}
+		item
+		{
+			weaponType = Hammer
+		}
+	}
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = "Types\\Units\\Rabbit\\Rabbit.mesh"
+			castDynamicShadows = True
+			position = 0 0 -1.15
+			boneSlot hand
+			{
+				bone = BoneHand
+			}
+			boneSlot head
+			{
+				bone = Bip01_HeadNub
+			}
+		}
+		helper
+		{
+			alias = Head
+			boneSlot = head
+			position = -0.08 0.4 -0.45
+			scale = 0.1 0.1 0.1
+		}
+	}
+	dieObjects
+	{
+		mapObject
+		{
+			type = RabbitDead
+			copyVelocitiesFromParent = True
+		}
+		sound
+		{
+			soundName = "Types/Units/Rabbit/Die.ogg"
+		}
+	}
+}

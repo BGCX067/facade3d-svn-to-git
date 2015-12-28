@@ -1,0 +1,12 @@
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\GameEntities.dll
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\GameEntities.pdb
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\GameEntities.xml
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\GameEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\GameEntities\obj\Debug\GameEntities.dll
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\GameEntities\obj\Debug\GameEntities.pdb
+D:\NeoAxis\facadenew\Game\Bin\GameEntities.dll
+D:\NeoAxis\facadenew\Game\Bin\GameEntities.pdb
+D:\NeoAxis\facadenew\Game\Bin\GameEntities.xml
+D:\NeoAxis\facadenew\Game\Src\GameEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\facadenew\Game\Src\GameEntities\obj\Debug\GameEntities.dll
+D:\NeoAxis\facadenew\Game\Src\GameEntities\obj\Debug\GameEntities.pdb

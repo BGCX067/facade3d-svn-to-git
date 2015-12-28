@@ -1,0 +1,1478 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Searching</name>
+    </assembly>
+    <members>
+        <member name="M:Searching.KnuthMorisPlat.GetAllOccurences(System.String,System.String)">
+            <summary>
+            Finds all the occurences a pattern in a a string
+            </summary>
+            <param name="pattern">The pattern to search for</param>
+            <param name="targetString">The target string to search for</param>
+            <returns>
+            Return an Arraylist containing the indexs where the 
+            patternn occured
+            </returns>
+        </member>
+        <member name="M:Searching.KnuthMorisPlat.GetOccurencesForReverseString(System.String,System.String)">
+            <summary>
+            Finds all the occurences a pattern in a string in reverse order
+            </summary>
+            <param name="pattern">The pattern to search for</param>
+            <param name="targetString">
+            The target string to search for. This string is actually reversed
+            </param>
+            <returns>
+            Return an Arraylist containing the indexs where the 
+            patternn occured
+            </returns>
+        </member>
+        <member name="M:Searching.KnuthMorisPlat.GetOccurences(System.String,System.String)">
+            <summary>
+            Finds all the occurences a pattern in a a string
+            </summary>
+            <param name="pattern">The pattern to search for</param>
+            <param name="targetString">The target string to search for</param>
+            <returns>
+            Return an Arraylist containing the indexs where the 
+            patternn occured
+            </returns>
+        </member>
+        <member name="F:Searching.PrefixArray.pattern">
+            <summary>
+            The pattern to compute the 
+            array
+            </summary>
+        </member>
+        <member name="M:Searching.PrefixArray.#ctor(System.String)">
+            <summary>
+            Constructs a prefix array
+            </summary>
+            <param name="pattern">
+            The to be used to construct
+            the prefix array</param>
+        </member>
+        <member name="M:Searching.PrefixArray.ComputeHArray">
+            <summary>
+            Computes the prefix array
+            </summary>
+        </member>
+        <member name="M:Searching.PrefixArray.IsSuffixExist(System.Int32,System.Char[])">
+            <summary>
+            Tests whether a suffix exists from the specified index
+            </summary>
+            <param name="index">
+            The index of the char[] to start looking
+            for the prefix
+             </param>
+            <param name="array">The source array</param>
+            <returns>
+            A bool; true if a prefix exist at the 
+            specified pos</returns>
+        </member>
+        <member name="M:Searching.PrefixArray.SubCharArray(System.Int32,System.Char[])">
+            <summary>
+            Creates a sub char[] from the source array 
+            </summary>
+            <param name="endIndex">
+            The end index to until which 
+            the copying should occur</param>
+            <param name="array">The source array</param>
+            <returns>A sub array</returns>
+        </member>
+        <member name="P:Searching.PrefixArray.TransitionArray">
+            <summary>
+            Gets the transition array
+            </summary>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.#ctor(System.Int32)">
+            <summary>
+            Creates a new Bloom filter, specifying an error rate of 1/capacity, using the optimal size for the underlying data structure based on the desired capacity and error rate, as well as the optimal number of hash functions.
+            A secondary hash function will be provided for you if your type T is either string or int. Otherwise an exception will be thrown. If you are not using these types please use the overload that supports custom hash functions.
+            </summary>
+            <param name="capacity">The anticipated number of items to be added to the filter. More than this number of items can be added, but the error rate will exceed what is expected.</param>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a new Bloom filter, using the optimal size for the underlying data structure based on the desired capacity and error rate, as well as the optimal number of hash functions.
+            A secondary hash function will be provided for you if your type T is either string or int. Otherwise an exception will be thrown. If you are not using these types please use the overload that supports custom hash functions.
+            </summary>
+            <param name="capacity">The anticipated number of items to be added to the filter. More than this number of items can be added, but the error rate will exceed what is expected.</param>
+            <param name="errorRate">The accepable false-positive rate (e.g., 0.01F = 1%)</param>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.#ctor(System.Int32,Searching.BloomFilter.Filter{`0}.HashFunction)">
+            <summary>
+            Creates a new Bloom filter, specifying an error rate of 1/capacity, using the optimal size for the underlying data structure based on the desired capacity and error rate, as well as the optimal number of hash functions.
+            </summary>
+            <param name="capacity">The anticipated number of items to be added to the filter. More than this number of items can be added, but the error rate will exceed what is expected.</param>
+            <param name="hashFunction">The function to hash the input values. Do not use GetHashCode(). If it is null, and T is string or int a hash function will be provided for you.</param>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.#ctor(System.Int32,System.Single,Searching.BloomFilter.Filter{`0}.HashFunction)">
+            <summary>
+            Creates a new Bloom filter, using the optimal size for the underlying data structure based on the desired capacity and error rate, as well as the optimal number of hash functions.
+            </summary>
+            <param name="capacity">The anticipated number of items to be added to the filter. More than this number of items can be added, but the error rate will exceed what is expected.</param>
+            <param name="errorRate">The accepable false-positive rate (e.g., 0.01F = 1%)</param>
+            <param name="hashFunction">The function to hash the input values. Do not use GetHashCode(). If it is null, and T is string or int a hash function will be provided for you.</param>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.#ctor(System.Int32,System.Single,Searching.BloomFilter.Filter{`0}.HashFunction,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Bloom filter.
+            </summary>
+            <param name="capacity">The anticipated number of items to be added to the filter. More than this number of items can be added, but the error rate will exceed what is expected.</param>
+            <param name="errorRate">The accepable false-positive rate (e.g., 0.01F = 1%)</param>
+            <param name="hashFunction">The function to hash the input values. Do not use GetHashCode(). If it is null, and T is string or int a hash function will be provided for you.</param>
+            <param name="m">The number of elements in the BitArray.</param>
+            <param name="k">The number of hash functions to use.</param>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.Add(`0)">
+            <summary>
+            Adds a new item to the filter. It cannot be removed.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.Contains(`0)">
+            <summary>
+            Checks for the existance of the item in the filter for a given probability.
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.computeHash(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Performs Dillinger and Manolios double hashing. 
+            </summary>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.hashInt32(`0)">
+            <summary>
+            Hashes a 32-bit signed int using Thomas Wang's method v3.1 (http://www.concentric.net/~Ttwang/tech/inthash.htm).
+            Runtime is suggested to be 11 cycles. 
+            </summary>
+            <param name="input">The integer to hash.</param>
+            <returns>The hashed result.</returns>
+        </member>
+        <member name="M:Searching.BloomFilter.Filter`1.hashString(`0)">
+            <summary>
+            Hashes a string using Bob Jenkin's "One At A Time" method from Dr. Dobbs (http://burtleburtle.net/bob/hash/doobs.html).
+            Runtime is suggested to be 9x+9, where x = input.Length. 
+            </summary>
+            <param name="input">The string to hash.</param>
+            <returns>The hashed result.</returns>
+        </member>
+        <member name="P:Searching.BloomFilter.Filter`1.Truthiness">
+            <summary>
+            The ratio of false to true bits in the filter. E.g., 1 true bit in a 10 bit filter means a truthiness of 0.1.
+            </summary>
+        </member>
+        <member name="T:Searching.BloomFilter.Filter`1.HashFunction">
+            <summary>
+            A function that can be used to hash input.
+            </summary>
+            <param name="input">The values to be hashed.</param>
+            <returns>The resulting hash code.</returns>
+        </member>
+        <member name="M:Searching.Horspool.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pattern">Pattern for search</param>
+        </member>
+        <member name="M:Searching.Horspool.BuildBadCharacterShift(System.String)">
+            <summary>
+            Build the bad character shift array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>bad character shift array</returns>
+        </member>
+        <member name="M:Searching.Horspool.FindSuffixes(System.String)">
+            <summary>
+            Find suffixes in the pattern
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Suffix array</returns>
+        </member>
+        <member name="M:Searching.Horspool.BuildGoodSuffixShift(System.String,System.Int32[])">
+            <summary>
+            Build the good suffix array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Good suffix shift array</returns>
+        </member>
+        <member name="M:Searching.Horspool.Match(System.String,System.Int32)">
+            <summary>
+            Return all matches of the pattern in specified text using the Horspool algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <param name="startingIndex">Index at which search begins</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.Horspool.Match(System.String)">
+            <summary>
+            Return all matches of the pattern in specified text using the Horspool algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.IndexOfString.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pattern">Pattern for search</param>
+        </member>
+        <member name="M:Searching.IndexOfString.Match(System.String,System.Int32)">
+            <summary>
+            Return all matched of the pattern in the specified text using the .NET String.indexOf API
+            </summary>
+            <param name="text">text to be searched</param>
+            <param name="startingIndex">Index at which search begins</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.IndexOfString.Match(System.String)">
+            <summary>
+            Return all matched of the pattern in the specified text using the .NET String.indexOf API
+            </summary>
+            <param name="text">text to be searched</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.BoyerMoore.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pattern">Pattern for search</param>
+        </member>
+        <member name="M:Searching.BoyerMoore.BuildBadCharacterShift(System.String)">
+            <summary>
+            Build the bad character shift array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>bad character shift array</returns>
+        </member>
+        <member name="M:Searching.BoyerMoore.FindSuffixes(System.String)">
+            <summary>
+            Find suffixes in the pattern
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Suffix array</returns>
+        </member>
+        <member name="M:Searching.BoyerMoore.BuildGoodSuffixShift(System.String,System.Int32[])">
+            <summary>
+            Build the good suffix array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Good suffix shift array</returns>
+        </member>
+        <member name="M:Searching.BoyerMoore.Match(System.String,System.Int32)">
+            <summary>
+            Return all matches of the pattern in specified text using the Boyer-Moore algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <param name="startingIndex">Index at which search begins</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.BoyerMoore.Match(System.String)">
+            <summary>
+            Return all matches of the pattern in specified text using the Boyer-Moore algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.TurboBoyerMoore.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pattern">Pattern for search</param>
+        </member>
+        <member name="M:Searching.TurboBoyerMoore.BuildBadCharacterShift(System.String)">
+            <summary>
+            Build the bad character shift array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>bad character shift array</returns>
+        </member>
+        <member name="M:Searching.TurboBoyerMoore.FindSuffixes(System.String)">
+            <summary>
+            Find suffixes in the pattern
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Suffix array</returns>
+        </member>
+        <member name="M:Searching.TurboBoyerMoore.BuildGoodSuffixShift(System.String,System.Int32[])">
+            <summary>
+            Build the good suffix array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Good suffix shift array</returns>
+        </member>
+        <member name="M:Searching.TurboBoyerMoore.Match(System.String,System.Int32)">
+            <summary>
+            Return all matches of the pattern in specified text using the Turbo Boyer-Moore algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <param name="startingIndex">Index at which search begins</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.TurboBoyerMoore.Match(System.String)">
+            <summary>
+            Return all matches of the pattern in specified text using the Turbo Boyer-Moore algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.ApostolicoGiancarlo.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pattern">Pattern for search</param>
+        </member>
+        <member name="M:Searching.ApostolicoGiancarlo.BuildBadCharacterShift(System.String)">
+            <summary>
+            Build the bad character shift array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>bad character shift array</returns>
+        </member>
+        <member name="M:Searching.ApostolicoGiancarlo.FindSuffixes(System.String)">
+            <summary>
+            Find suffixes in the pattern
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Suffix array</returns>
+        </member>
+        <member name="M:Searching.ApostolicoGiancarlo.BuildGoodSuffixShift(System.String,System.Int32[])">
+            <summary>
+            Build the good suffix array.
+            </summary>
+            <param name="pattern">Pattern for search</param>
+            <returns>Good suffix shift array</returns>
+        </member>
+        <member name="M:Searching.ApostolicoGiancarlo.Match(System.String,System.Int32)">
+            <summary>
+            Return all matches of the pattern in specified text using the Apostolico-GiancarloMatch algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <param name="startingIndex">Index at which search begins</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="M:Searching.ApostolicoGiancarlo.Match(System.String)">
+            <summary>
+            Return all matches of the pattern in specified text using the Apostolico-GiancarloMatch algorithm
+            </summary>
+            <param name="text">text to be searched</param>
+            <returns>IEnumerable which returns the indexes of pattern matches</returns>
+        </member>
+        <member name="T:Searching.TernarySearchTree.Traverser">
+            <summary>
+            Defines a <see cref="T:Searching.TernarySearchTree.TstDictionary"/> tree traverser object.
+            </summary>
+            <remarks>
+            <para>
+            This class can be used to traverse the ternary tree. It defines two events:
+            TreeEntry and DiscoverEntry.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Searching.TernarySearchTree.Traverser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Searching.TernarySearchTree.Traverser.Traverse(Searching.TernarySearchTree.TstDictionary)">
+            <summary>
+            Tarverses the ternary search tree nodes of <paramref name="dic"/>.
+            </summary>
+            <param name="dic">Tree to explore</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="dic"/> is null.</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.Traverser.OnTreeEntry(Searching.TernarySearchTree.TstDictionaryEntry)">
+            <summary>
+            Raises the <see cref="!:TstTraverser.TreeEntry"/> event.
+            </summary>
+            <param name="p">tst node added to the tree</param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.Traverser.OnLowChild(Searching.TernarySearchTree.TstDictionaryEntry)">
+            <summary>
+            Raises the <see cref="!:TstTraverser.HighChild"/> event.
+            </summary>
+            <param name="p">high child about to be added to the tree</param>	
+        </member>
+        <member name="M:Searching.TernarySearchTree.Traverser.OnEqChild(Searching.TernarySearchTree.TstDictionaryEntry)">
+            <summary>
+            Raises the <see cref="!:TstTraverser.HighChild"/> event.
+            </summary>
+            <param name="p">high child about to be added to the tree</param>	
+        </member>
+        <member name="M:Searching.TernarySearchTree.Traverser.OnHighChild(Searching.TernarySearchTree.TstDictionaryEntry)">
+            <summary>
+            Raises the <see cref="!:TstTraverser.HighChild"/> event.
+            </summary>
+            <param name="p">high child about to be added to the tree</param>	
+        </member>
+        <member name="M:Searching.TernarySearchTree.Traverser.Traverse(Searching.TernarySearchTree.TstDictionaryEntry)">
+            <summary>
+            Traverses the <paramref name="p"/> sub-tree.
+            </summary>
+            <param name="p">node to traverse.</param>
+        </member>
+        <member name="E:Searching.TernarySearchTree.Traverser.TreeEntry">
+            <summary>Event called when a node is integrated into the traversed tree.</summary>
+        </member>
+        <member name="E:Searching.TernarySearchTree.Traverser.LowChild">
+            <summary>Event called when a node is discovered but not yet in the explore tree.</summary>
+        </member>
+        <member name="E:Searching.TernarySearchTree.Traverser.EqChild">
+            <summary>Event called when a node is discovered but not yet in the explore tree.</summary>
+        </member>
+        <member name="E:Searching.TernarySearchTree.Traverser.HighChild">
+            <summary>Event called when a node is discovered but not yet in the explore tree.</summary>
+        </member>
+        <member name="T:Searching.TernarySearchTree.TstDictionary">
+            <summary>
+            Ternary Search Tree Dictionary
+            </summary>
+            <remarks>
+            <para>
+            This dictionary is an implementation of the <b>Ternary Search Tree</b>
+            data structure proposed by J. L. Bentley and R. Sedgewick in their 
+            paper:  Fast algorithms for sorting and searching strings
+            in Proceedings of the Eighth Annual ACM-SIAM Symposium on Discrete Algorithms, 
+            New Orleans Louisiana, January 5-7, 1997. 
+            </para>
+            <para>
+            This dictionary acts as a symbol table: the keys must be string. It
+            is generally faster to find symbol than the <see cref="T:System.Collections.Hashtable"/> or
+            <see cref="T:System.Collections.SortedList"/> classes. It can also perform more complex search
+            such as neighbor search.
+            </para>
+            <para>
+            Please read the paper to get some insight on the stucture used below.
+            </para>	
+            </remarks>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.#ctor">
+            <summary>
+             Constructor
+            </summary> 
+             <remarks>
+             Construct an empty ternary search tree.
+             </remarks>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.#ctor(Searching.TernarySearchTree.TstDictionaryEntry)">
+            <summary>
+            Create a dictionary with a specified root.
+            </summary>
+            <param name="root">Root of the new dictionary</param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.Clone">
+            <summary>
+            Creates a shallow copy of the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <returns>A shallow copy of the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.</returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.Synchronized(Searching.TernarySearchTree.TstDictionary)">
+            <summary>
+            Returns a synchronized (thread-safe) wrapper for 
+            the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <param name="table">The <see cref="T:Searching.TernarySearchTree.TstDictionary"/> to synchronize.</param>
+            <returns>A synchronized (thread-safe) wrapper for the 
+            <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="table"/> is a null reference.</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> elements to a one-dimensional Array instance at the specified index.
+            </summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"/> that is the destination of the 
+            <see cref="T:System.Collections.DictionaryEntry"/> 
+            objects copied from <see cref="T:Searching.TernarySearchTree.TstDictionary"/>. The <see cref="T:System.Array"/> must have zero-based indexing.
+            </param>
+            <param name="arrayIndex">The zero-based index in <paramref name="array"/> at which copying begins.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="array"/> is a null reference</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="arrayIndex"/> is less than zero.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            <paramref name="array"/> is multidimensional. 
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            <paramref name="arrayIndex"/> is equal to or greater than the length of <paramref name="array"/>. 
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            The number of elements in the source <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is greater than 
+            the available space from <paramref name="arrayIndex"/> to the end of the destination array. 
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            The type of the source <see cref="T:Searching.TernarySearchTree.TstDictionary"/> cannot be cast automatically 
+            to the type of the destination array. 
+            </exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.Add(System.String,System.Object)">
+            <summary>
+             Adds an element with the specified key and value into the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+             <param name="key">The key of the element to add.</param>
+             <param name="value">The value of the element to add. The value can be a null reference (Nothing in Visual Basic).</param>
+             <exception cref="T:System.ArgumentNullException">
+             <paramref name="key"/> is a null reference (Nothing in Visual Basic).
+             </exception>
+             <exception cref="T:System.ArgumentException"><paramref name="key"/> is an empty string</exception>
+             <exception cref="T:System.ArgumentException">
+             An element with the same key already exists in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+             </exception>
+             <exception cref="T:System.NotSupportedException">The <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is read-only.</exception>
+             <exception cref="T:System.NotSupportedException">The <see cref="T:Searching.TernarySearchTree.TstDictionary"/> has a fixed size.</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.Remove(System.String)">
+            <summary>
+             Removes the element with the specified key from the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+             </summary>
+             <param name="key">The key of the element to remove.</param>
+             <exception cref="T:System.ArgumentNullException">
+             <paramref name="key"/> is a null reference (Nothing in Visual Basic).
+             </exception>
+             <exception cref="T:System.ArgumentException"><paramref name="key"/> is an empty string</exception>
+             <exception cref="T:System.NotSupportedException">The <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is read-only.</exception>
+             <exception cref="T:System.NotSupportedException">The <see cref="T:Searching.TernarySearchTree.TstDictionary"/> has a fixed size.</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.Clear">
+            <summary>
+            Removes all elements from the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is read-only.</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.Contains(System.String)">
+            <summary>
+            Determines whether the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> contains a specific key.
+            </summary>
+            <param name="key">The key to locate in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.</param>
+            <returns>true if the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> contains an element with the specified key; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="key"/> is a null reference (Nothing in Visual Basic).
+            </exception>
+            <remarks>
+            <para>Complexity: Uses a Ternary Search Tree (tst) to find the key.</para>
+            <para>The method behaves exactly as <see cref="M:Searching.TernarySearchTree.TstDictionary.ContainsKey(System.String)"/>.</para>
+            </remarks>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.ContainsKey(System.String)">
+            <summary>
+            Determines whether the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> contains a specific key.
+            </summary>
+            <param name="key">The key to locate in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.</param>
+            <returns>true if the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> contains an element with the specified key; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="key"/> is a null reference (Nothing in Visual Basic).
+            </exception>
+            <remarks>
+            <para>Complexity: Uses a Ternary Search Tree (tst) to find the key.</para>
+            <para>The method behaves exactly as <see cref="M:Searching.TernarySearchTree.TstDictionary.Contains(System.String)"/>.</para>
+            </remarks>    
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.ContainsValue(System.Object)">
+            <summary>
+            Determines whether the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> contains a specific value.
+            </summary>
+            <returns>
+            true if the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> contains an element with the specified value; 
+            otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.GetEnumerator">
+            <summary>
+            Returns an <see cref="T:System.Collections.IDictionaryEnumerator"/> that can iterate through the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <returns>An <see cref="T:System.Collections.IDictionaryEnumerator"/> for the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.</returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an <see cref="T:System.Collections.IDictionaryEnumerator"/> that can iterate through the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <returns>An <see cref="T:System.Collections.IDictionaryEnumerator"/> for the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.</returns>		
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.Find(System.String)">
+            <summary>
+            Finds the tst node matching the key.
+            </summary>
+            <returns>the <see cref="T:Searching.TernarySearchTree.TstDictionaryEntry"/> mathcing the key, null if not found.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is null.</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.PartialMatch(System.String)">
+            <summary>
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">key is a null reference</exception>
+            <exception cref="T:System.ArgumentException">key is an empty string</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.PartialMatch(System.String,System.Char)">
+            <summary>
+            Partial match search with wild char character.
+            </summary>
+            <param name="key">key to match</param>
+            <param name="wildChar">"don't care" character</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">key is a null reference</exception>
+            <exception cref="T:System.ArgumentException">key is an empty string</exception>
+            <remarks>
+            <para>
+            Searching the dictionary for the pattern
+            "*o*o*o" matches the single word <em>rococo</em>, 
+            while the pattern
+            "*a*a*a" matches many words, including <em>banana</em>,
+            <em>casaba</em>, and <em>pajama</em>.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.PartialMatchSearch(Searching.TernarySearchTree.TstDictionaryEntry,System.String,System.Int32,System.Char,System.Collections.IList)">
+            <summary>
+            
+            </summary>
+            <param name="p"></param>
+            <param name="key"></param>
+            <param name="index"></param>
+            <param name="wildChar"></param>
+            <param name="matches"></param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.NearNeighbors(System.String,System.Int32)">
+            <summary>
+            Near-neighbor search in the key string set.
+            </summary>
+            <param name="key">key to search for.</param>
+            <param name="distance">Hamming distance</param>
+            <returns>near-neighbor search within <paramref name="distance"/>
+            Hamming distance.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">key is a null reference</exception>
+            <exception cref="T:System.ArgumentException">dist is negative</exception>
+            <remarks>
+            <para>
+            This methods finds all words in
+            the dictionary that are within a given Hamming distance of
+            a query word.
+            </para>
+            <para>
+            For instance, a search for all words within
+            distance two of soda finds code, coma and 117 other
+            words.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionary.NearNeighborsSearch(Searching.TernarySearchTree.TstDictionaryEntry,System.String,System.Int32,System.Int32,System.Collections.IList)">
+            <summary>
+            
+            </summary>
+            <param name="p"></param>
+            <param name="key"></param>
+            <param name="index"></param>
+            <param name="dist"></param>
+            <param name="matches"></param>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.Root">
+            <summary>
+             Root node
+             </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.Version">
+            <summary>
+            Returns the current dictionary version.
+            </summary>
+            <remarks>
+            This method is used by enumerators to track the dictionary
+            modification.
+            </remarks>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.Count">
+            <summary>
+             Gets the number of key-and-value pairs contained in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+             </summary>	
+             <value>
+             The number of key-and-value pairs contained in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+             </value>
+             <remarks>
+             Complexity: O(N)
+             </remarks>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.IsSynchronized">
+            <summary>
+            Get a value indicating whether access to the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is synchronized (thread-safe).
+            </summary>
+            <value>
+            true if access to the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is synchronized (thread-safe); 
+            otherwise, false. The default is false.
+            </value>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <value>
+            An object that can be used to synchronize access to the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </value>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.IsFixedSize">
+            <summary>
+            Gets a value indicating whether the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> has a fixed size. 
+            </summary>
+            <value>
+            true if the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> has a fixed size; otherwise, false. 
+            The default is false.
+            </value>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.IsReadOnly">
+            <summary>
+             Gets a value indicating whether the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is read-only.
+             </summary>
+             <value>
+             true if the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is read-only; otherwise, false. 
+             The default is false.
+             </value>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.Keys">
+            <summary>
+            Gets an <see cref="T:System.Collections.Specialized.StringCollection"/> containing the keys in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.Specialized.StringCollection"/> containing the keys in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </returns>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.Values">
+            <summary>
+            Gets an <see cref="T:System.Collections.ICollection"/> containing the values in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.ICollection"/> containing the values in the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </returns>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionary.Item(System.String)">
+            <summary>
+            Gets or sets the value associated with the specified key.
+            </summary>
+            <remarks>
+            [C#] In C#, this property is the indexer for the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> class.
+            </remarks>
+            <param name="key">The key whose value to get or set.</param>
+            <value>
+            The value associated with the specified key. 
+            If the specified key is not found, attempting to get it returns a null reference 
+            (Nothing in Visual Basic), and attempting to set it creates a new element using the specified key.
+            </value>
+            <exception cref="T:System.ArgumentNullException"><paramref name="key"/> is a null reference</exception>
+            <exception cref="T:System.ArgumentException">
+            The property is set and <paramref name="key"/> is an empty string
+            </exception>
+            <exception cref="T:System.NotSupportedException">
+            The property is set and the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> is read-only. 
+            </exception>
+            <exception cref="T:System.NotSupportedException">
+            The property is set, <paramref name="key"/> does not exist in the collection,
+            and the <see cref="T:Searching.TernarySearchTree.TstDictionary"/> has a fixed size.
+            </exception>
+        </member>
+        <member name="T:Searching.TernarySearchTree.TstDictionaryEntry">
+            <summary>
+            Defines a Ternary Search Tree node pair that can be set or retrieved.
+            </summary>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionaryEntry.#ctor(Searching.TernarySearchTree.TstDictionaryEntry,System.Char)">
+            <summary>
+            Construct a tst node.
+            </summary>
+            <param name="parent">parent node</param>
+            <param name="splitChar">split character</param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionaryEntry.Clone">
+            <summary>
+            Creates a shallow copy of the entry
+            </summary>
+            <returns>entry shallow copy</returns>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.Parent">
+            <summary>
+            Gets the parent of the node.
+            </summary>	
+            <value>
+            The parent node.
+            </value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.SplitChar">
+            <summary>
+            Gets the split character.
+            </summary>	
+            <value>
+            The split character.
+            </value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.IsKey">
+            <summary>
+            Gets a value indicating wheter the node is a key.
+            </summary>	
+            <value>
+            true is the node is a key, false otherwize.
+            </value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.Key">
+            <summary>
+            Gets the node key, if it is a key.
+            </summary>
+            <value>
+            The node key.
+            </value>
+            <exception cref="T:System.InvalidOperationException">The node does not hold a key-value pair.</exception>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.Value">
+            <summary>
+            Gets the node value.
+            </summary>	
+            <value>
+            The node value.
+            </value>
+            <exception cref="T:System.InvalidOperationException">The node does not hold a key-value pair.</exception>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.LowChild">
+            <summary>
+            Gets the node low child.
+            </summary>	
+            <value>
+            The low child.
+            </value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.EqChild">
+            <summary>
+            Gets the node ep child.
+            </summary>	
+            <value>
+            The eq child.
+            </value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.HighChild">
+            <summary>
+            Gets the node high child.
+            </summary>	
+            <value>
+            The high child.
+            </value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.HasChildren">
+            <summary>
+            Gets a value indicating wheter the node has children.
+            </summary>	
+            <value>
+            true if the node has children, false otherwize.
+            </value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.IsLowChild">
+            <summary>
+            Gets a value indicating wheter the node is a low child.
+            </summary>	
+            <value>
+            true if the node is a low child, false otherwize.
+            </value>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.IsHighChild">
+            <summary>
+            Gets a value indicating wheter the node is a high child.
+            </summary>	
+            <value>
+            true if the node is a high child, false otherwize.
+            </value>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntry.IsEqChild">
+            <summary>
+            Gets a value indicating wheter the node is a eq child.
+            </summary>	
+            <value>
+            true if the node is a eq child, false otherwize.
+            </value>
+        </member>
+        <member name="T:Searching.TernarySearchTree.TstDictionaryEntryEventArgs">
+            <summary>
+            Defines an event argument class that holds a <see cref="T:Searching.TernarySearchTree.TstDictionaryEntry"/>.
+            </summary>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionaryEntryEventArgs.#ctor(Searching.TernarySearchTree.TstDictionaryEntry)">
+            <summary>Create a <see cref="T:Searching.TernarySearchTree.TstDictionaryEntry"/> event argument.</summary>
+            <param name="entry">A <see cref="T:Searching.TernarySearchTree.TstDictionaryEntry"/> entry to pass as argument.</param>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEntryEventArgs.Entry">
+            <summary>Gets the <see cref="T:Searching.TernarySearchTree.TstDictionaryEntry"/> entry.</summary>
+            <value>The <see cref="T:Searching.TernarySearchTree.TstDictionaryEntry"/> entry.</value>
+        </member>
+        <member name="T:Searching.TernarySearchTree.TstDictionaryEntryEventHandler">
+            <summary>
+            A <see cref="T:Searching.TernarySearchTree.TstDictionaryEntry"/> event handler.
+            </summary>
+        </member>
+        <member name="T:Searching.TernarySearchTree.TstDictionaryEnumerator">
+            <summary>
+            Enumerates the elements of a <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionaryEnumerator.#ctor(Searching.TernarySearchTree.TstDictionary)">
+            <summary>Constructs an enumerator over <paramref name="tst"/></summary>
+            <param name="tst">dictionary to enumerate.</param>
+            <exception cref="T:System.ArgumentNullException">tst is null</exception>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionaryEnumerator.Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TstDictionaryEnumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the collection.
+            </summary>
+            <returns>
+            true if the enumerator was successfully advanced to the next element; 
+            false if the enumerator has passed the end of the collection.
+            </returns>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEnumerator.Current">
+            <summary>
+            Gets the current element in the collection.
+            </summary>
+            <value>The current element in the collection.</value>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEnumerator.System#Collections#IEnumerator#Current">
+            <summary>
+            Gets the current element in the collection.
+            </summary>
+            <value>The current element in the collection.</value>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEnumerator.Entry">
+            <summary>
+            Gets both the key and the value of the current dictionary entry.
+            </summary>
+            <value>
+            A <see cref="T:System.Collections.DictionaryEntry"/> containing both the key and the value of the current 
+            dictionary entry.
+            </value>
+            <exception cref="T:System.InvalidOperationException">
+            The enumerator is positioned before the first entry of the dictionary or after the last entry. 
+            </exception>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEnumerator.Key">
+            <summary>
+            Gets the key of the current dictionary entry.
+            </summary>
+            <value>
+            The key of the current element of the enumeration.
+            </value>
+            <exception cref="T:System.InvalidOperationException">
+            The enumerator is positioned before the first entry of the dictionary or after the last entry. 
+            </exception>	
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEnumerator.System#Collections#IDictionaryEnumerator#Key">
+            <summary>
+            Gets the key of the current dictionary entry.
+            </summary>
+            <value>
+            The key of the current element of the enumeration.
+            </value>
+            <exception cref="T:System.InvalidOperationException">
+            The enumerator is positioned before the first entry of the dictionary or after the last entry. 
+            </exception>		
+        </member>
+        <member name="P:Searching.TernarySearchTree.TstDictionaryEnumerator.Value">
+            <summary>
+            Gets the value of the current dictionary entry.
+            </summary>
+            <value>
+            The value of the current element of the enumeration.
+            </value>
+            <exception cref="T:System.InvalidOperationException">
+            The enumerator is positioned before the first entry of the dictionary or after the last entry. 
+            </exception>		
+        </member>
+        <member name="T:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary">
+            <summary>
+            A synchronized (thread-safe) wrapper for the <see cref="T:Searching.TernarySearchTree.TstDictionary"/>.
+            </summary>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.#ctor(Searching.TernarySearchTree.TstDictionary)">
+            <summary>
+            Creates a synchronized wrapper around the 
+            <see cref="T:Searching.TernarySearchTree.TstDictionary"/> <paramref name="dic"/>.
+            </summary>
+            <param name="dic">Dictionary to synchronize</param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Add(System.String,System.Object)">
+            <summary>
+            Synchronized Add method.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Clear">
+            <summary>
+            Synchronized clear method
+            </summary>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Remove(System.String)">
+            <summary>
+            Synchronized remove method
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Clone">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.ContainsKey(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.CopyTo(System.Array,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="array"></param>
+            <param name="arrayIndex"></param>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Find(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.GetEnumerator">
+            <summary>
+            Gets a non-synchronized enumerator
+            </summary>
+            <remarks>
+            Enumerating through a collection is intrinsically not a 
+            thread-safe procedure. 
+            Even when a collection is synchronized, other threads could still 
+            modify the collection, which causes the enumerator to throw an 
+            exception. 
+            To guarantee thread safety during enumeration, you can either lock 
+            the collection during the entire enumeration or catch the 
+            exceptions resulting from changes made by other threads.
+            </remarks>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.PartialMatch(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.PartialMatch(System.String,System.Char)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="wildChar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.NearNeighbors(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="distance"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Wrapped">
+            <summary>
+            Wrapped dictionary
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.IsFixedSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.IsSynchronized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.IsReadOnly">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Values">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.Item(System.String)">
+            <summary>
+            Synchronized indexer
+            </summary>
+        </member>
+        <member name="P:Searching.TernarySearchTree.TernarySearchTreeSynchronizedDictionary.SyncRoot">
+            <summary>
+            SyncRoot object
+            </summary>
+        </member>
+        <member name="T:Searching.SkipList">
+            <summary>
+            Represents a collection of key-and-value pairs.
+            </summary>
+            <remarks>
+            The SkipList class is an implementation of the IDictionary interface. It 
+            is based on the data structure created by William Pugh.
+            </remarks> 
+        </member>
+        <member name="M:Searching.SkipList.#ctor">
+            <summary>
+            Initializes a new instance of the SkipList class that is empty and 
+            is sorted according to the IComparable interface implemented by 
+            each key added to the SkipList.
+            </summary>
+            <remarks>
+            Each key must implement the IComparable interface to be capable of 
+            comparisons with every other key in the SortedList. The elements 
+            are sorted according to the IComparable implementation of each key 
+            added to the SkipList.
+            </remarks>
+        </member>
+        <member name="M:Searching.SkipList.#ctor(System.Collections.IComparer)">
+            <summary>
+            Initializes a new instance of the SkipList class that is empty and 
+            is sorted according to the specified IComparer interface.
+            </summary>
+            <param name="comparer">
+            The IComparer implementation to use when comparing keys. 
+            </param>
+            <remarks>
+            The elements are sorted according to the specified IComparer 
+            implementation. If comparer is a null reference, the IComparable 
+            implementation of each key is used; therefore, each key must 
+            implement the IComparable interface to be capable of comparisons 
+            with every other key in the SkipList.
+            </remarks>
+        </member>
+        <member name="M:Searching.SkipList.Initialize">
+            <summary>
+            Initializes the SkipList.
+            </summary>
+        </member>
+        <member name="M:Searching.SkipList.GetNewLevel">
+            <summary>
+            Returns a level value for a new SkipList node.
+            </summary>
+            <returns>
+            The level value for a new SkipList node.
+            </returns>
+        </member>
+        <member name="M:Searching.SkipList.Search(System.Object)">
+            <summary>
+            Searches for the specified key.
+            </summary>
+            <param name="key">
+            The key to search for.
+            </param>
+            <returns>
+            Returns true if the specified key is in the SkipList.
+            </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Searching.SkipList.Search(System.Object,Searching.SkipList.Node@)" -->
+        <member name="M:Searching.SkipList.Search(System.Object,Searching.SkipList.Node[])">
+            <summary>
+            Searches for the specified key.
+            </summary>
+            <param name="key">
+            The key to search for.
+            </param>
+            <param name="update">
+            An array of nodes holding references to the places in the SkipList
+            search in which the search dropped down one level.
+            </param>
+            <returns>
+            Returns true if the specified key is in the SkipList.
+            </returns>
+        </member>
+        <member name="M:Searching.SkipList.Search(System.Object,Searching.SkipList.Node@,Searching.SkipList.Node[])">
+            <summary>
+            Searches for the specified key.
+            </summary>
+            <param name="key">
+            The key to search for.
+            </param>
+            <param name="curr">
+            A SkipList node to hold the results of the search.
+            </param>
+            <param name="update">
+            An array of nodes holding references to the places in the SkipList
+            search in which the search dropped down one level.
+            </param>
+            <returns>
+            Returns true if the specified key is in the SkipList.
+            </returns>
+        </member>
+        <member name="M:Searching.SkipList.SearchWithComparer(System.Object,Searching.SkipList.Node@,Searching.SkipList.Node[])">
+            <summary>
+            Search for the specified key using a comparer.
+            </summary>
+            <param name="key">
+            The key to search for.
+            </param>
+            <param name="curr">
+            A SkipList node to hold the results of the search.
+            </param>
+            <param name="update">
+            An array of nodes holding references to the places in the SkipList
+            search in which the search dropped down one level.
+            </param>
+            <returns>
+            Returns true if the specified key is in the SkipList.
+            </returns>
+        </member>
+        <member name="M:Searching.SkipList.SearchWithComparable(System.Object,Searching.SkipList.Node@,Searching.SkipList.Node[])">
+            <summary>
+            Search for the specified key using the IComparable interface 
+            implemented by each key.
+            </summary>
+            <param name="key">
+            The key to search for.
+            </param>
+            <param name="curr">
+            A SkipList node to hold the results of the search.
+            </param>
+            <param name="update">
+            An array of nodes holding references to the places in the SkipList
+            search in which the search dropped down one level.
+            </param>
+            <returns>
+            Returns true if the specified key is in the SkipList.
+            </returns>
+            <remarks>
+            Assumes each key inserted into the SkipList implements the 
+            IComparable interface.
+            
+            If the specified key is in the SkipList, the curr parameter will
+            reference the node with the key. If the specified key is not in the
+            SkipList, the curr paramater will either hold the node with the 
+            first key value greater than the specified key or null indicating 
+            that the search reached the end of the SkipList.
+            </remarks>
+        </member>
+        <member name="M:Searching.SkipList.Insert(System.Object,System.Object,Searching.SkipList.Node[])">
+            <summary>
+            Inserts a key/value pair into the SkipList.
+            </summary>
+            <param name="key">
+            The key to insert into the SkipList.
+            </param>
+            <param name="val">
+            The value to insert into the SkipList.
+            </param>
+            <param name="update">
+            An array of nodes holding references to places in the SkipList in 
+            which the search for the place to insert the new key/value pair 
+            dropped down one level.
+            </param>
+        </member>
+        <member name="M:Searching.SkipList.Add(System.Object,System.Object)">
+            <summary>
+            Adds an element with the provided key and value to the SkipList.
+            </summary>
+            <param name="key">
+            The Object to use as the key of the element to add. 
+            </param>
+            <param name="value">
+            The Object to use as the value of the element to add. 
+            </param>
+        </member>
+        <member name="M:Searching.SkipList.Clear">
+            <summary>
+            Removes all elements from the SkipList.
+            </summary>
+        </member>
+        <member name="M:Searching.SkipList.Contains(System.Object)">
+            <summary>
+            Determines whether the SkipList contains an element with the 
+            specified key.
+            </summary>
+            <param name="key">
+            The key to locate in the SkipList.
+            </param>
+            <returns>
+            true if the SkipList contains an element with the key; otherwise, 
+            false.
+            </returns>
+        </member>
+        <member name="M:Searching.SkipList.GetEnumerator">
+            <summary>
+            Returns an IDictionaryEnumerator for the SkipList.
+            </summary>
+            <returns>
+            An IDictionaryEnumerator for the SkipList.
+            </returns>
+        </member>
+        <member name="M:Searching.SkipList.Remove(System.Object)">
+            <summary>
+            Removes the element with the specified key from the SkipList.
+            </summary>
+            <param name="key">
+            The key of the element to remove.
+            </param>
+        </member>
+        <member name="M:Searching.SkipList.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the elements of the SkipList to an Array, starting at a 
+            particular Array index.
+            </summary>
+            <param name="array">
+            The one-dimensional Array that is the destination of the elements 
+            copied from SkipList.
+            </param>
+            <param name="index">
+            The zero-based index in array at which copying begins.
+            </param>
+        </member>
+        <member name="M:Searching.SkipList.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the SkipList.
+            </summary>
+            <returns>
+            An IEnumerator that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="P:Searching.SkipList.IsFixedSize">
+            <summary>
+            Gets a value indicating whether the SkipList has a fixed size.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the IDictionary is read-only.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.Item(System.Object)">
+            <summary>
+            Gets or sets the element with the specified key. This is the 
+            indexer for the SkipList. 
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.Keys">
+            <summary>
+            Gets an ICollection containing the keys of the SkipList.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.Values">
+            <summary>
+            Gets an ICollection containing the values of the SkipList.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.Count">
+            <summary>
+            Gets the number of elements contained in the SkipList.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the SkipList is 
+            synchronized (thread-safe).
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the 
+            SkipList.
+            </summary>
+        </member>
+        <member name="T:Searching.SkipList.Node">
+            <summary>
+            Represents a node in the SkipList.
+            </summary>
+        </member>
+        <member name="M:Searching.SkipList.Node.#ctor(System.Int32)">
+            <summary>
+            Initializes an instant of a Node with its node level.
+            </summary>
+            <param name="level">
+            The node level.
+            </param>
+        </member>
+        <member name="M:Searching.SkipList.Node.#ctor(System.Int32,System.Object,System.Object)">
+            <summary>
+            Initializes an instant of a Node with its node level and 
+            key/value pair.
+            </summary>
+            <param name="level">
+            The node level.
+            </param>
+            <param name="key">
+            The key for the node.
+            </param>
+            <param name="val">
+            The value for the node.
+            </param>
+        </member>
+        <member name="M:Searching.SkipList.Node.Dispose">
+            <summary>
+            Disposes the Node.
+            </summary>
+        </member>
+        <member name="T:Searching.SkipList.SkipListEnumerator">
+            <summary>
+            Enumerates the elements of a skip list.
+            </summary>
+        </member>
+        <member name="M:Searching.SkipList.SkipListEnumerator.#ctor(Searching.SkipList)">
+            <summary>
+            Initializes an instance of a SkipListEnumerator.
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:Searching.SkipList.SkipListEnumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the skip list.
+            </summary>
+            <returns>
+            true if the enumerator was successfully advanced to the next 
+            element; false if the enumerator has passed the end of the 
+            skip list.
+            </returns>
+        </member>
+        <member name="M:Searching.SkipList.SkipListEnumerator.Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before 
+            the first element in the skip list.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.SkipListEnumerator.Entry">
+            <summary>
+            Gets both the key and the value of the current dictionary 
+            entry.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.SkipListEnumerator.Key">
+            <summary>
+            Gets the key of the current dictionary entry.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.SkipListEnumerator.Value">
+            <summary>
+            Gets the value of the current dictionary entry.
+            </summary>
+        </member>
+        <member name="P:Searching.SkipList.SkipListEnumerator.Current">
+            <summary>
+            Gets the current element in the skip list.
+            </summary>
+        </member>
+    </members>
+</doc>

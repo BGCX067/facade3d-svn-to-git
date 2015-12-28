@@ -1,0 +1,6 @@
+type SpeculativeMapChangeRegion
+{
+	class = SpeculativeMapChangeRegion
+	allowEditorCreate = True
+	networkType = ServerOnly
+}

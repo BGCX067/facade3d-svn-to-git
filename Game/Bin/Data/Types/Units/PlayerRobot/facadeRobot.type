@@ -1,0 +1,27 @@
+type facadeRobot
+{
+	class = PlayerCharacter
+	walkMaxVelocity = 5
+	walkForce = 4000
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = "Types\\Units\\PlayerRobot\\facadeRobot.mesh"
+			position = 0 0 -0.9093436
+			scale = 0.3 0.3 0.3
+			boneSlot Head
+			{
+				bone = Head
+			}
+		}
+		helper
+		{
+			alias = Head
+			boneSlot = Head
+			position = 0.3453816 0 0.1967061
+			scale = 0.1 0.1 0.1
+		}
+	}
+}

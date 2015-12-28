@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NonCommercialLicense">
+</Property><Property Name="Solution File" Value="D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\NonCommercialLicense.sln">
+</Property><Property Name="Date" Value="10 czerwca 2011">
+</Property><Property Name="Time" Value="14:48">
+</Property></Properties><Event ErrorLevel="0" Project="WinFormsAppExample" Source="WinFormsAppExample\WinFormsAppExample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WinFormsAppExample" Source="WinFormsAppExample\WinFormsAppExample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Game" Source="Game\Game.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Game" Source="Game\Game.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GameEntities" Source="GameEntities\GameEntities.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GameEntities" Source="GameEntities\GameEntities.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ChatExample" Source="ChatExample\ChatExample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ChatExample" Source="ChatExample\ChatExample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DedicatedServer" Source="DedicatedServer\DedicatedServer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DedicatedServer" Source="DedicatedServer\DedicatedServer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GameCommon" Source="GameCommon\GameCommon.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GameCommon" Source="GameCommon\GameCommon.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WPFAppExample" Source="WPFAppExample\WPFAppExample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WPFAppExample" Source="WPFAppExample\WPFAppExample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="NonCommercialLicense.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NonCommercialLicense.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WinFormsAppExample" Source="WinFormsAppExample\WinFormsAppExample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Game" Source="Game\Game.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="GameEntities" Source="GameEntities\GameEntities.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ChatExample" Source="ChatExample\ChatExample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DedicatedServer" Source="DedicatedServer\DedicatedServer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="GameCommon" Source="GameCommon\GameCommon.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WPFAppExample" Source="WPFAppExample\WPFAppExample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

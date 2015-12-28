@@ -1,0 +1,21 @@
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\DedicatedServer.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\DedicatedServer.pdb
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\DedicatedServer.xml
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\DedicatedServer\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.MainForm.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.Properties.Resources.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\DedicatedServer\obj\Debug\GenerateResource.read.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\DedicatedServer\obj\Debug\GenerateResource.write.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.pdb
+D:\NeoAxis\facadenew\Game\Bin\DedicatedServer.exe.config
+D:\NeoAxis\facadenew\Game\Bin\DedicatedServer.exe
+D:\NeoAxis\facadenew\Game\Bin\DedicatedServer.pdb
+D:\NeoAxis\facadenew\Game\Bin\DedicatedServer.xml
+D:\NeoAxis\facadenew\Game\Src\DedicatedServer\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\facadenew\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.MainForm.resources
+D:\NeoAxis\facadenew\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.Properties.Resources.resources
+D:\NeoAxis\facadenew\Game\Src\DedicatedServer\obj\Debug\ResGen.read.1.tlog
+D:\NeoAxis\facadenew\Game\Src\DedicatedServer\obj\Debug\ResGen.write.1.tlog
+D:\NeoAxis\facadenew\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.exe
+D:\NeoAxis\facadenew\Game\Src\DedicatedServer\obj\Debug\DedicatedServer.pdb

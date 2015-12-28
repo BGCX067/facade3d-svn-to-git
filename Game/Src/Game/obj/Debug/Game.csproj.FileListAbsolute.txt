@@ -1,0 +1,19 @@
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\Game.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\Game.pdb
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\Game.xml
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\Game\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\Game\obj\Debug\Game.Properties.Resources.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\Game\obj\Debug\GenerateResource.read.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\Game\obj\Debug\GenerateResource.write.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\Game\obj\Debug\Game.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\Game\obj\Debug\Game.pdb
+D:\NeoAxis\facadenew\Game\Bin\Game.exe
+D:\NeoAxis\facadenew\Game\Bin\Game.pdb
+D:\NeoAxis\facadenew\Game\Bin\Game.xml
+D:\NeoAxis\facadenew\Game\Src\Game\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\facadenew\Game\Src\Game\obj\Debug\Game.Properties.Resources.resources
+D:\NeoAxis\facadenew\Game\Src\Game\obj\Debug\Game.exe
+D:\NeoAxis\facadenew\Game\Src\Game\obj\Debug\Game.pdb
+D:\NeoAxis\facadenew\Game\Bin\Game.exe.config
+D:\NeoAxis\facadenew\Game\Src\Game\obj\Debug\ResGen.read.1.tlog
+D:\NeoAxis\facadenew\Game\Src\Game\obj\Debug\ResGen.write.1.tlog

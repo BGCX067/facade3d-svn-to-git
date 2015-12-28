@@ -1,0 +1,25 @@
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\ChatExample.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\ChatExample.pdb
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\ChatExample.xml
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\ChatExample.ClientForm.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\ChatExample.MainForm.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\ChatExample.Properties.Resources.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\ChatExample.ServerForm.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\GenerateResource.read.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\GenerateResource.write.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\ChatExample.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\ChatExample\obj\Debug\ChatExample.pdb
+D:\NeoAxis\facadenew\Game\Bin\ChatExample.exe.config
+D:\NeoAxis\facadenew\Game\Bin\ChatExample.exe
+D:\NeoAxis\facadenew\Game\Bin\ChatExample.pdb
+D:\NeoAxis\facadenew\Game\Bin\ChatExample.xml
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ChatExample.ClientForm.resources
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ChatExample.MainForm.resources
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ChatExample.Properties.Resources.resources
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ChatExample.ServerForm.resources
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ResGen.read.1.tlog
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ResGen.write.1.tlog
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ChatExample.exe
+D:\NeoAxis\facadenew\Game\Src\ChatExample\obj\Debug\ChatExample.pdb

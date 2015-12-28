@@ -1,0 +1,8 @@
+highLevelMaterial "\x4e2d\x56fd"
+{
+	template = ShaderBaseMaterial
+	diffuse1Map
+	{
+		texture = "_Tests\\Unicode\\Chinese\\\x4e2d\x56fd.dds"
+	}
+}

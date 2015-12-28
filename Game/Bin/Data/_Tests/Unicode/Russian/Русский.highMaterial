@@ -1,0 +1,8 @@
+highLevelMaterial "\x0420\x0443\x0441\x0441\x043a\x0438\x0439"
+{
+	template = ShaderBaseMaterial
+	diffuse1Map
+	{
+		texture = "_Tests\\Unicode\\Russian\\\x0420\x0443\x0441\x0441\x043a\x0438\x0439.dds"
+	}
+}

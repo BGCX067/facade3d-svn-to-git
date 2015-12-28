@@ -1,0 +1,396 @@
+type = GameMap
+uin = 2
+classPrompt = GameMap
+gameMusic = "Sounds\\Music\\Game.ogg"
+ambientLight = 0.4980392 0.4980392 0.4980392
+editorCameraPosition = -13.64151 -40.47234 9.709561
+editorCameraDirection = 4.04157 -0.7734016
+shadowColor = 0.6 0.6 0.6 0.6
+shadowFarDistance = 80
+shadowPSSMSplitFactors = 0.1 0.4
+nearFarClipDistance = 0.1 3000
+logicSystemManager = 3
+shadowTechnique = ShadowmapHigh
+rootEditorLayer
+{
+	layer
+	{
+		name = StaticGeometry
+	}
+}
+entity
+{
+	type = LogicSystemManager
+	uin = 3
+	mapClassManager = 4
+	entity
+	{
+		type = LogicClassManager
+		uin = 4
+	}
+}
+entity
+{
+	type = Light
+	uin = 5
+	classPrompt = Light
+	lightType = Directional
+	diffuseColor = 0.8627452 0.8627452 0.8627452
+	diffusePower = 1
+	specularColor = 1 1 1
+	specularPower = 1
+	attenuationNear = 0
+	attenuationFar = 10
+	attenuationPower = 2
+	ffpAttenuationConstant = 1
+	ffpAttenuationLinear = 0
+	ffpAttenuationQuadric = 0
+	spotlightInnerAngle = 30
+	spotlightOuterAngle = 40
+	spotlightFalloff = 1
+	castShadows = True
+	allowStaticLighting = False
+	allowDynamicLighting = True
+	customShaderParameter = 0 0 0 0
+	position = -37.71922 -1.393759 37.08606
+	rotation = 0.374715 -0.3659987 -0.2429488 -0.8164617
+	name = Light_0
+}
+entity
+{
+	type = SpawnPoint
+	uin = 6
+	classPrompt = SpawnPoint
+	defaultPoint = True
+	position = 4.38546 -79.00466 2.797277
+	rotation = 0 0 -0.7071068 -0.7071068
+	name = SpawnPoint_0
+}
+entity
+{
+	type = Door
+	uin = 7
+	classPrompt = AutomaticOpenDoor
+	noAutomaticOpen = False
+	opened = False
+	needOpen = False
+	openDoorOffsetCoefficient = 0
+	position = 6.605463 -80.14497 0.1361547
+	name = Door_0
+}
+entity
+{
+	type = Door
+	uin = 8
+	classPrompt = AutomaticOpenDoor
+	noAutomaticOpen = True
+	opened = False
+	needOpen = False
+	openDoorOffsetCoefficient = 0
+	position = 6.618344 -96.35172 0.1105455
+	name = Door_2
+}
+entity
+{
+	type = StaticMesh
+	uin = 9
+	classPrompt = StaticMesh
+	position = 6.584788 -87.92399 0.1537676
+	rotation = 0 0 -0.7071068 0.7071068
+	editorLayer = "Root Layer\\StaticGeometry"
+	meshName = "Models\\CorridorExit\\CorridorExit.mesh"
+	splitGeometryPieceSize = 60 60 60
+	allowDecals = All
+	castDynamicShadows = True
+}
+entity
+{
+	type = MapCamera
+	uin = 10
+	classPrompt = MapCamera
+	fov = 0
+	position = -4.672212 -66.53858 4.245813
+	rotation = 0.04389242 -0.03258268 -0.8017458 -0.5951605
+	name = MapCamera_MainMenu
+}
+entity
+{
+	type = SkyBox
+	uin = 11
+	classPrompt = SkyBox
+	textureName = "Maps\\ConstructionsDemo\\Resources\\Sky\\SkyBox.jpg"
+	color = 1 1 1
+	power = 1
+}
+entity
+{
+	type = StaticMesh
+	uin = 12
+	classPrompt = StaticMesh
+	position = -11.09243 -47.74931 -0.3952895
+	meshName = "Models\\Rooms\\Rooms.mesh"
+}
+entity
+{
+	type = Box
+	uin = 13
+	classPrompt = Dynamic
+	position = -12.05233 -48.42506 0.1052378
+	name = Box_0
+}
+entity
+{
+	type = Box
+	uin = 14
+	classPrompt = Dynamic
+	position = -10.6258 -45.5967 0.1056715
+	name = Box_1
+}
+entity
+{
+	type = Box
+	uin = 15
+	classPrompt = Dynamic
+	position = -7.727751 -46.84112 0.1062288
+	name = Box_2
+}
+entity
+{
+	type = Box
+	uin = 16
+	classPrompt = Dynamic
+	position = -2.317553 -49.91651 0.1075563
+	name = Box_3
+}
+entity
+{
+	type = Box
+	uin = 17
+	classPrompt = Dynamic
+	position = -11.04893 -48.82938 0.8381964
+	name = Box_4
+}
+entity
+{
+	type = Box
+	uin = 18
+	classPrompt = Dynamic
+	position = -10.04393 -48.94478 1.487195
+	name = Box_5
+}
+entity
+{
+	type = Box
+	uin = 19
+	classPrompt = Dynamic
+	position = -9.100929 -48.86066 0.1047911
+	name = Box_6
+}
+entity
+{
+	type = Box
+	uin = 20
+	classPrompt = Dynamic
+	position = -6.484583 -55.58221 2.023553
+	name = Box_7
+}
+entity
+{
+	type = Box
+	uin = 21
+	classPrompt = Dynamic
+	position = -9.712781 -50.15546 0.1056024
+	name = Box_8
+}
+entity
+{
+	type = Box
+	uin = 22
+	classPrompt = Dynamic
+	position = -6.475847 -55.49382 0.9895391
+	name = Box_9
+}
+entity
+{
+	type = Box
+	uin = 23
+	classPrompt = Dynamic
+	position = -6.459546 -55.51357 0.1048069
+	name = Box_10
+}
+entity
+{
+	type = Box
+	uin = 24
+	classPrompt = Dynamic
+	position = -9.264599 -56.74101 1.242423
+	name = Box_11
+}
+entity
+{
+	type = Box
+	uin = 25
+	classPrompt = Dynamic
+	position = -17.80992 -53.49968 0.1053841
+	name = Box_12
+}
+entity
+{
+	type = Box
+	uin = 26
+	classPrompt = Dynamic
+	position = -32.28568 -45.76133 0.8029615
+	name = Box_13
+}
+entity
+{
+	type = Box
+	uin = 27
+	classPrompt = Dynamic
+	position = -22.30821 -43.80885 0.1051613
+	name = Box_14
+}
+entity
+{
+	type = Box
+	uin = 28
+	classPrompt = Dynamic
+	position = -22.30994 -29.00839 0.2642886
+	name = Box_15
+}
+entity
+{
+	type = Box
+	uin = 29
+	classPrompt = Dynamic
+	position = -2.084598 -46.78434 0.1071984
+	name = Box_16
+}
+entity
+{
+	type = Box
+	uin = 30
+	classPrompt = Dynamic
+	position = 1.485222 -44.98239 0.1048043
+	name = Box_17
+}
+entity
+{
+	type = Box
+	uin = 31
+	classPrompt = Dynamic
+	position = 5.175394 -50.47333 0.1292169
+	name = Box_18
+}
+entity
+{
+	type = Box
+	uin = 32
+	classPrompt = Dynamic
+	position = 1.968526 -54.48779 0.1085303
+	name = Box_19
+}
+entity
+{
+	type = Box
+	uin = 33
+	classPrompt = Dynamic
+	position = 5.191043 -54.73672 0.1280128
+	name = Box_20
+}
+entity
+{
+	type = Box
+	uin = 34
+	classPrompt = Dynamic
+	position = -17.00176 -60.54051 0.1058618
+	name = Box_21
+}
+entity
+{
+	type = Box
+	uin = 35
+	classPrompt = Dynamic
+	position = -7.250922 -56.5452 0.1065205
+	name = Box_22
+}
+entity
+{
+	type = Box
+	uin = 36
+	classPrompt = Dynamic
+	position = -8.468401 -56.71573 0.2510757
+	name = Box_23
+}
+entity
+{
+	type = Box
+	uin = 37
+	classPrompt = Dynamic
+	position = -10.2401 -56.66925 0.1058177
+	name = Box_24
+}
+entity
+{
+	type = Box
+	uin = 38
+	classPrompt = Dynamic
+	position = 3.18305 -40.87875 0.1061274
+	name = Box_25
+}
+entity
+{
+	type = Box
+	uin = 39
+	classPrompt = Dynamic
+	position = -6.173618 -38.79187 0.1047465
+	name = Box_26
+}
+entity
+{
+	type = Box
+	uin = 40
+	classPrompt = Dynamic
+	position = -14.26829 -34.75697 0.1049102
+	name = Box_27
+}
+entity
+{
+	type = Box
+	uin = 41
+	classPrompt = Dynamic
+	position = -22.55528 -34.37366 0.1057436
+	name = Box_28
+}
+entity
+{
+	type = Box
+	uin = 42
+	classPrompt = Dynamic
+	position = 5.429552 -38.5355 0.1317388
+	name = Box_29
+}
+entity
+{
+	type = Box
+	uin = 43
+	classPrompt = Dynamic
+	position = 3.292765 -52.60564 0.1090483
+	name = Box_30
+}
+entity
+{
+	type = Box
+	uin = 44
+	classPrompt = Dynamic
+	position = -4.157916 -33.93985 0.1054901
+	name = Box_31
+}
+entity
+{
+	type = Box
+	uin = 45
+	classPrompt = Dynamic
+	position = -8.395707 -41.31561 0.1055454
+	name = Box_32
+}

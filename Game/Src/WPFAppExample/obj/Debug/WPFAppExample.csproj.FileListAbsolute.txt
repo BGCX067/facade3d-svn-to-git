@@ -1,0 +1,31 @@
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\WPFAppExample.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Bin\WPFAppExample.pdb
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\AdditionalWindow.baml
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\MainWindow.baml
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\AdditionalWindow.g.cs
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\MainWindow.g.cs
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\App.g.cs
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\WPFAppExample_MarkupCompile.cache
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.g.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.Properties.Resources.resources
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\GenerateResource.read.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\GenerateResource.write.1.tlog
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.exe
+D:\NeoAxis\NeoAxis Engine Non-Commercial SDK 1.0 BETA\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.pdb
+D:\NeoAxis\facadenew\Game\Bin\WPFAppExample.exe.config
+D:\NeoAxis\facadenew\Game\Bin\WPFAppExample.exe
+D:\NeoAxis\facadenew\Game\Bin\WPFAppExample.pdb
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\ResolveAssemblyReference.cache
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\AdditionalWindow.baml
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\MainWindow.baml
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\AdditionalWindow.g.cs
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\MainWindow.g.cs
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\App.g.cs
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\WPFAppExample_MarkupCompile.cache
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.g.resources
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.Properties.Resources.resources
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\GenerateResource.read.1.tlog
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\GenerateResource.write.1.tlog
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.exe
+D:\NeoAxis\facadenew\Game\Src\WPFAppExample\obj\Debug\WPFAppExample.pdb
